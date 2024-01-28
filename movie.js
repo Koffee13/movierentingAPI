@@ -34,7 +34,7 @@ class Movie {
           movie.isAvailable = false;
           console.log(`${movie.title} rented successfully.`);
         } else {
-          console.log(`${movie.title} is not available for rent.`);
+          console.log(`${movie.title} is not available.`);
         }
       } else {
         console.log(`Movie with title "${title}" not found.`);
@@ -45,15 +45,15 @@ class Movie {
   // Example usage:
   const movieStore = new MovieStore();
   
-  movieStore.addMovie('Inception', 'Sci-Fi');
-  movieStore.addMovie('The Shawshank Redemption', 'Drama');
-  movieStore.addMovie('The Dark Knight', 'Action');
+  movieStore.addMovie('Conjuring', 'Horror');
+  movieStore.addMovie('Avengers', 'Sci-fi');
+  movieStore.addMovie('Barbie', 'Drama');
   
   movieStore.listMovies();
   
-  movieStore.rentMovie('Inception');
-  movieStore.rentMovie('The Dark Knight');
-  movieStore.rentMovie('The Matrix');
+  movieStore.rentMovie('Conjuring');
+  movieStore.rentMovie('Avengers');
+  movieStore.rentMovie('Barbie');
   
   movieStore.listMovies();
   
